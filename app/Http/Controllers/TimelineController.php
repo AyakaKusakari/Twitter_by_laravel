@@ -20,7 +20,7 @@ class TimelineController extends Controller
     public function postTweet(Request $request)
     {
         $request->validate([
-            'tweet' => 'required|max:280',
+            'tweet' => 'required|max:140',
         ]);
 
         Tweet::create([
